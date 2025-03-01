@@ -1,6 +1,148 @@
+/* *{
+    box-sizing: border-box;
+}
+header, footer {
+    height: 100px;
+    border: 3px solid black;
+    clear: both;
+}
+section{
+    height: 300px;
+    width: 33.3333%;
+    border: 3px solid black;
+    float: left;
+} */
 
-header footer {
+/* LAYOUT1 */
+
+/* *{
+    box-sizing: border-box;
+}
+header, footer {
     height:100px;
-    border: 3px solid blueviolet;
-    clear:both;
+    border:2px solid blueviolet;
+    clear: both;
+}
+.first {
+    height: 100px;
+    width:33.333%;
+    border: 1px solid purple;
+    float:right;     
+}
+
+.second{
+    height: 100px;
+    width:50%;
+    border: 2px solid palevioletred;
+    float: right;
+} */
+
+
+
+/* LAYOUT2 */
+
+/* *{
+    box-sizing: border-box;
+}
+
+header,footer{
+    height:80px;
+    border: 3px solid violet;
+    clear: both;
+
+}
+.first{
+    height: 100px;
+    width:100%;
+    border: 3px dotted blue;
+}
+.main1{
+    height: 150px;
+    border: 2px dotted palevioletred;
+    width:40%;
+    float:left;
+}
+.main2{
+    height: 150px;
+    border: 2px dotted palevioletred;
+    float:right; 
+} */
+
+*{
+    box-sizing: border-box;
+}
+header, footer {
+    height: 60px;
+    border: 3px solid gray;
+    clear: both;
+
+}
+
+/* .first {
+    height: 300px;
+    width: 20%;
+    border: 3px solid silver;
+    
+    
+
+} */
+
+.big{
+    /* height: 300px; */
+    width:40%;
+    /* border:3px solid silver;
+    float: left; */
+
+}
+section{
+    height: 300px;
+    width: 20%;
+    border: 3px solid silver;
+    float: left;  
+}
+@media screen and (max-width:600px){
+    section{
+        background: lightblue;
+        width: 33.3333%;
+    }
+}
+@media (min-width: 601px) and (max-width:900px){
+    section{
+        background: rgb(10, 72, 111);
+    }
+    .big{
+        display:flex;
+    }
+}
+@media (min-width:901px) and (max-width:1200px){
+    section{
+        background: lightseagreen;
+        width:33.3333%;
+    }
+}
+@media(max-width: 50em){
+    body{
+        background-color: plum;
+    }
+}
+
+@media(min-width:50em) and (max-width:100em){
+    body{
+        background-color: lightpink;
+    }
+}
+ 
+a:hover{
+    color:red;
+    background: yellow;
+    
+}
+@media (hover: hover){
+    a:hover{
+        color:white;
+        background: black;
+    }
+}
+a{
+    font-size: x-large;
 }
